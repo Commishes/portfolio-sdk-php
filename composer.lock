@@ -1,0 +1,206 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "be7756dadf9ed4513564699a2cbe906c",
+    "packages": [
+        {
+            "name": "magic3w/base32-int",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://phabricator.magic3w.com/source/base32-int.git",
+                "reference": "95c5e7129f7108d4cd8956f1a1bb4796de357ce7"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "magic3w\\support\\base32\\": "./src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "César de la Cal Bretschneider",
+                    "email": "cesar@magic3w.com"
+                }
+            ],
+            "description": "Base32 utility for url IDs",
+            "time": "2021-02-12T14:13:23+00:00"
+        },
+        {
+            "name": "magic3w/phpauth-sdk-php",
+            "version": "v0.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://phabricator.magic3w.com/source/phpas-sdk-php.git",
+                "reference": "f38d3c967b0ae9a4a40260ac783c33964f592bc4"
+            },
+            "require": {
+                "magic3w/url-reflection": "dev-master",
+                "spitfire/request": "dev-master"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "magic3w\\phpauth\\sdk\\": "./src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "César de la Cal Bretschneider",
+                    "email": "cesar@magic3w.com"
+                }
+            ],
+            "description": "PHP SDK for PHPAuthServer (magic3w/phpauth)",
+            "time": "2021-02-24T09:48:53+00:00"
+        },
+        {
+            "name": "magic3w/url-reflection",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://phabricator.magic3w.com/source/url-reflection.git",
+                "reference": "6d7529af43c2cb1ed264e9b88d257ac4066b641c"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.3"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "magic3w\\http\\url\\reflection\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "César de la Cal Bretschneider",
+                    "email": "cesar@magic3w.com"
+                }
+            ],
+            "description": "Allows applications to have a URL parsed and retrieve information about it's components",
+            "time": "2020-11-04T12:01:53+00:00"
+        },
+        {
+            "name": "spitfire/request",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://phabricator.magic3w.com/source/spitfire-request.git",
+                "reference": "0e8166d802e0e71dd12365bca0215043c9df37d2"
+            },
+            "require": {
+                "magic3w/url-reflection": "dev-master"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.4"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "spitfire\\io\\request\\": "./src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "César de la Cal Bretschneider",
+                    "email": "cesar@magic3w.com"
+                }
+            ],
+            "description": "Spitfire request mechanism",
+            "time": "2021-01-21T07:59:55+00:00"
+        }
+    ],
+    "packages-dev": [
+        {
+            "name": "phpstan/phpstan",
+            "version": "0.12.82",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phpstan/phpstan.git",
+                "reference": "3920f0fb0aff39263d3a4cb0bca120a67a1a6a11"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/3920f0fb0aff39263d3a4cb0bca120a67a1a6a11",
+                "reference": "3920f0fb0aff39263d3a4cb0bca120a67a1a6a11",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1|^8.0"
+            },
+            "conflict": {
+                "phpstan/phpstan-shim": "*"
+            },
+            "bin": [
+                "phpstan",
+                "phpstan.phar"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.12-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "bootstrap.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "PHPStan - PHP Static Analysis Tool",
+            "support": {
+                "issues": "https://github.com/phpstan/phpstan/issues",
+                "source": "https://github.com/phpstan/phpstan/tree/0.12.82"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/ondrejmirtes",
+                    "type": "github"
+                },
+                {
+                    "url": "https://www.patreon.com/phpstan",
+                    "type": "patreon"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/phpstan/phpstan",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-03-19T06:08:17+00:00"
+        }
+    ],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "magic3w/base32-int": 20
+    },
+    "prefer-stable": true,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.0.0"
+}
